@@ -27,12 +27,12 @@
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
         android:layout_marginBottom="186dp"
-        android:contentDescription="Imagebutton"
-        android:src="@drawable/T"
+        android:contentDescription="im_bt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_F"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:src="@drawable/mbti_b" />
 
     <ImageButton
         android:id="@+id/btn_F"
@@ -40,12 +40,11 @@
         android:layout_height="360dp"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
-        android:contentDescription="imagebutton"
-        android:src="@drawable/F"
+        android:contentDescription="im_bt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_T"
         app:layout_constraintTop_toTopOf="parent"
-         />
+        tools:src="@drawable/mbti_a" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
