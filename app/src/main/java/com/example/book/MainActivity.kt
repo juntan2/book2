@@ -20,11 +20,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val imageButton: ImageButton = findViewById(R.id.btn_T)
-        imageButton.setOnClickListener{
-            val intent = Intent(this,subT::class.java)
-            startActivity(intent)
+        val btn1: ImageButton = findViewById(R.id.btn_T)
+        val btn2: ImageButton = findViewById(R.id.btn_F)
 
+        btn1.setOnClickListener {
+            val intent = Intent(this, subT::class.java)
+            startActivity(intent)
+        }
+
+        btn2.setOnClickListener {
+            val intent = Intent(this, subF::class.java)
+            startActivity(intent)
         }
     }
 }

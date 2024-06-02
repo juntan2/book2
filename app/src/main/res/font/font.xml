@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/wag1"
+        />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/ak2"
+        />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/rs8"
+        />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/rs9"
+        />
+</font-family>

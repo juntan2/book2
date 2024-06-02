@@ -1,6 +1,5 @@
 package com.example.book
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
@@ -9,21 +8,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class subT : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class lastF : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_sub_t)
+        setContentView(R.layout.activity_last_f)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val last_T: ImageButton = findViewById(R.id.lastbtnT)
+        val back_2: ImageButton = findViewById(R.id.rollback)
 
-        last_T.setOnClickListener {
-            val intent = Intent(this, lastT::class.java)
+        back_2.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

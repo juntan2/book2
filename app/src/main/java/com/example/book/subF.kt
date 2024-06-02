@@ -9,21 +9,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class subT : AppCompatActivity() {
+class subF : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_sub_t)
+        setContentView(R.layout.activity_sub_f)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val last_T: ImageButton = findViewById(R.id.lastbtnT)
+        val last_F: ImageButton = findViewById(R.id.lastbtnF)
 
-        last_T.setOnClickListener {
-            val intent = Intent(this, lastT::class.java)
+        last_F.setOnClickListener {
+            val intent = Intent(this, lastF::class.java)
             startActivity(intent)
         }
     }

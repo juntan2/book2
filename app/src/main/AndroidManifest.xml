@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Book"
         tools:targetApi="31">
         <activity
+            android:name=".lastF"
+            android:exported="false" />
+        <activity
+            android:name=".lastT"
+            android:exported="false" />
+        <activity
+            android:name=".subF"
+            android:exported="false" />
+        <activity
             android:name=".subT"
             android:exported="false" />
         <activity

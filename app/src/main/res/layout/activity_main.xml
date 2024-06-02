@@ -5,46 +5,60 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="127dp"
-        android:layout_marginBottom="39dp"
-        android:text="해결사"
-        app:layout_constraintBottom_toTopOf="@+id/btn_T"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/ak2"
+        android:text="Solution Book"
+        android:textColor="@color/white"
+        android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_T"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="185dp"
+        android:layout_height="318dp"
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
-        android:layout_marginBottom="186dp"
-        android:contentDescription="im_bt"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_F"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:src="@drawable/mbti_b" />
+        tools:src="@drawable/mbti_t" />
 
     <ImageButton
         android:id="@+id/btn_F"
         android:layout_width="0dp"
-        android:layout_height="360dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:contentDescription="im_bt"
+        android:layout_height="0dp"
+        android:layout_marginBottom="126dp"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_T"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/mbti_a" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:src="@drawable/mbti" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="91dp"
+        android:fontFamily="@font/wag1"
+        android:text="Choose T or F"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
