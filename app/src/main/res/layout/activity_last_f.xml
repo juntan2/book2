@@ -5,29 +5,48 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main"
+    android:background="@drawable/book_result1"
     tools:context=".lastF">
 
     <TextView
         android:id="@+id/randomtextF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="102dp"
-        android:text="랜덤 문구"
-        android:textSize="30sp"
+        android:layout_width="322dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="114dp"
+        android:gravity="center_horizontal|top"
+        android:text="Random phrases for concerns"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/rollback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="154dp"
         android:contentDescription="@string/app_name"
+        android:text="Back to Menu"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert"
-        />
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="455dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomtextF" />
 </androidx.constraintlayout.widget.ConstraintLayout>
